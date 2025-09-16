@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import ar.edu.huergo.vectorial.calidad.bucher.entity.bookuser.Biblioteca;
+//import ar.edu.huergo.vectorial.calidad.bucher.entity.bookuser.Biblioteca;
 import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.Publicacion;
 import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.RegistroPrestamo;
 import jakarta.persistence.CascadeType;
@@ -81,8 +81,8 @@ public class Usuario {
     private List<RegistroPrestamo> prestamos = new ArrayList<>();
 
     // Relación 1 a 1 con biblioteca
-    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Biblioteca biblioteca;
+    //@OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
+    //private Biblioteca biblioteca;
 
     // Constructor
     public Usuario(String username, String password) {
