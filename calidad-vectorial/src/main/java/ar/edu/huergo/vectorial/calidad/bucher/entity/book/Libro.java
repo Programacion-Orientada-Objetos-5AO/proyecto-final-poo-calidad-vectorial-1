@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.Publicacion;
+//import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.Publicacion;
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
@@ -108,6 +108,6 @@ public class Libro {
     private Autor autor;
 
     //Reacion 1 a muchos con Pubicaciones
-    @OneToMany(mappedBy = "libro")
-    private List<Publicacion> publicaciones = new ArrayList<>();
+    //@OneToMany(mappedBy = "libro")
+    //private List<Publicacion> publicaciones = new ArrayList<>();
 }

@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Set;
 
 import ar.edu.huergo.vectorial.calidad.bucher.entity.bookuser.Biblioteca;
-import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.Publicacion;
-import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.RegistroPrestamo;
+//import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.Publicacion;
+//import ar.edu.huergo.vectorial.calidad.bucher.entity.publication.RegistroPrestamo;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -73,12 +73,12 @@ public class Usuario {
     private Set<Rol> roles = new HashSet<>();
 
     // Relacion 1 a Muchos con Pubicaciones
-    @OneToMany(mappedBy = "usuario")
-    private List<Publicacion> publicaciones = new ArrayList<>();
+    //@OneToMany(mappedBy = "usuario")
+    //private List<Publicacion> publicaciones = new ArrayList<>();
 
     // Reacion 1 a Muchos con Prestamos
-    @OneToMany(mappedBy = "usuario")
-    private List<RegistroPrestamo> prestamos = new ArrayList<>();
+    //@OneToMany(mappedBy = "usuario")
+    //private List<RegistroPrestamo> prestamos = new ArrayList<>();
 
     // Relación 1 a 1 con biblioteca
     @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
