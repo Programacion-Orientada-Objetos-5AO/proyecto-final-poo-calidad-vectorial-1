@@ -1,0 +1,191 @@
+.rostro {
+    font-family: "Hind Siliguri";
+    border-radius: 5px 1.5rem 1.5rem 5px;
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);*/
+    box-shadow: 4px 2px 1px;
+
+    width: clamp(140px, 16vw, 200px);
+    height: auto;
+    box-sizing: border-box;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    animation: rostro-flotar 4s ease-in-out infinite;
+}
+
+.rostro--rojo {
+    background: #db1515;
+    color: #a40f0f;
+}
+
+.rostro--amarillo {
+    background: #f3f346;
+    color: #9f9f2e;
+}
+
+.rostro--azul {
+    background: #5b6df6;
+    color: #3c49a6;
+}
+
+.rostro--dorado {
+    background: linear-gradient(to top left, #B8860B, #FFCC33);
+    color: #FFCC33;
+}
+
+/*
+linear-gradient(to bottom, #FFD700, #D4AF37)
+linear-gradient(to top right, #B8860B, #FFCC33)
+*/
+
+.rostro--verde-oscuro {
+    background: #117c4c;
+    color: #08413C;
+}
+
+.rostro--verde-claro {
+    background: #349569;
+    color: #0E675F;
+}
+
+.rostro--grande {
+    aspect-ratio: 2/3;
+}
+
+.rostro--medio {
+    aspect-ratio: 4/5;
+}
+
+.rostro--chico {
+    aspect-ratio: 1;
+}
+
+.rostro__content {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.rostro__content__text {
+    font-family: "Handelson Three", cursive;
+    font-size: 5rem;
+    font-weight: 500;
+    color: currentColor;
+}
+
+.rostro__globo {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    background: #f2f2f2;
+    border: 2px solid #1a1a1a;
+    border-radius: 1rem;
+    padding: 10px;
+    animation: globo-aparecer 450ms ease-out;
+}
+
+@keyframes globo-aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rostro__globo__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.rostro__globo__punta {
+    position: absolute;
+    justify-self: center;
+    bottom: -13%;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #1a1a1a;
+}
+
+.rostro--büchi {
+    width: 80px;
+    height: 100px;
+    padding-top: 20px;
+    border-radius: 5px 1rem 1rem 5px;
+}
+
+.rostro--büchi .rostro__content__text {
+    position: absolute;
+    bottom: -8px;
+    font-size: 3rem;
+}
+
+.globo {
+    position: absolute;
+    background: #ffff;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -120%);
+    border: 2px solid currentColor;
+    border-radius: 20px;
+
+    padding: 10px;
+    width: 200px;
+}
+
+.globo::before {
+    content: '';
+    background: #ffff;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(10%, 150%);
+
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+.globo::after {
+    content: '';
+    background: #ffff;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(180%, 260%);
+
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+.globo--rojo {
+    color: #db1515;
+}
+
+.globo--amarillo {
+    color: #9f9f2e;
+}
+
+.globo--azul {
+    color: #5b6df6;
+}
+
+.globo__text {
+    color: #1a1a1a;
+    justify-self: center;
+    text-align: center;
+}

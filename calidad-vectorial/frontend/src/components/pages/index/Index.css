@@ -1,0 +1,16 @@
+.body-index {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.body-index__pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.body-index__pub-list__item {
+    width: fit-content;
+}
