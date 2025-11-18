@@ -48,6 +48,10 @@ public class SecurityConfig {
                 session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
 
+                // Parcial
+                .requestMatchers(HttpMethod.POST, "/calculo/**").permitAll()
+                .requestMatchers(HttpMethod.GET, "/calculo/**").permitAll()
+
                 // Permite recursos estáticos (CSS, JS, imágenes) públicos
                 .requestMatchers("/css/**", "/js/**", "/images/**", "/webjars/**").permitAll()
                 .requestMatchers("/favicon.ico").permitAll()
