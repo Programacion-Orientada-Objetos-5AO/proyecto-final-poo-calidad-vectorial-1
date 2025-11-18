@@ -57,6 +57,13 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.POST, "/auth/logout").permitAll()
                 .requestMatchers(HttpMethod.POST, "/usuario/registrar").permitAll()
 
+                // Parcial
+                .requestMatchers(HttpMethod.GET, "/tarea/**").permitAll()
+                .requestMatchers(HttpMethod.POST, "/tarea/**").permitAll()
+                .requestMatchers(HttpMethod.DELETE, "/tarea/**").permitAll()
+                .requestMatchers(HttpMethod.PUT, "/tarea/**").permitAll()
+                .requestMatchers(HttpMethod.PATCH, "/tarea/**").permitAll()
+
                 // Usuario
                 .requestMatchers(HttpMethod.GET, "/usuario").hasRole("ADMIN")
 
