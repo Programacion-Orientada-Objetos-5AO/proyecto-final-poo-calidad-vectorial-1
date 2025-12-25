@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    color: currentColor;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Handelson Three";
+    src: url("./assets/fonts/handelson-w00-three/Handelson-W00-Three.woff2") format("woff2"),
+        url("./assets/fonts/handelson-w00-three/Handelson-W00-Three.woff")  format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Klee One";
+    src: url("./assets/fonts/klee-one/KleeOne-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Klee One";
+    src: url("./assets/fonts/klee-one/KleeOne-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hind Siliguri";
+    src: url("./assets/fonts/hind-siliguri/HindSiliguri-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"] {
+    -ms-text-security: none;
+}

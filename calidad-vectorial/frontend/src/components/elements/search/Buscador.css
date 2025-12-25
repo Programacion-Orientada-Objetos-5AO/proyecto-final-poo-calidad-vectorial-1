@@ -1,0 +1,39 @@
+.buscador {
+    height: 60px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.buscador__input {
+    flex: 0 1 35%;
+    min-width: 240px;
+    max-width: 350px;
+    box-sizing: border-box;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buscador__input > :first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.buscador__input button {
+    flex: 0 0 auto;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.buscador__input__lupa {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
